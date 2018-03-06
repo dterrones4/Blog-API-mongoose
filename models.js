@@ -1,6 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 //this is our schema to represent a blog post
 const blogSchema = mongoose.Schema({
